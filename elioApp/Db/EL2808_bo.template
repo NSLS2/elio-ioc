@@ -1,0 +1,8 @@
+record(bo,"$(Sys)$(Dev)Out:Ch$(CHAN)-Cmd")
+{
+	field(DTYP, "EL20XX")
+	field(DESC, "$(DESC)")
+	field(ZNAM, "$(ZNAM=low)")
+	field(ONAM, "$(ONAM=high)")
+	field(OUT, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL2808")
+}

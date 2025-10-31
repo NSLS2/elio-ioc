@@ -1,0 +1,10 @@
+record(ai,"$(Sys)$(Dev)T:Ch$(CHAN)-I")
+{
+	field(DTYP, "EL331X")
+	field(DESC, "$(DESC)")
+	field(EGU, "C")
+	field(SCAN, "I/O Intr")
+	field(PREC, "$(PREC=3)")
+	field(ESLO, "0.1")
+	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL3314")
+}
