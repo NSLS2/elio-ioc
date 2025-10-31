@@ -1,9 +1,0 @@
-record(bi,"$(Sys)$(Dev)In:Ch$(CHAN)-Sts")
-{
-	field(DTYP, "EL10XX")
-	field(DESC, "$(DESC)")
-	field(ZNAM, "$(ZNAM=low)")
-	field(ONAM, "$(ONAM=high)")
-	field(SCAN, "I/O Intr")
-	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL1808")
-}

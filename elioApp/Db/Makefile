@@ -6,9 +6,13 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-DB += EL2808_bo.template
-DB += EL1808_bi.emplate
+DB += EL1124.template
+DB += EL1808.emplate
+DB += EL2124.template
+DB += EL2808.template
+DB += EL3068.template
 DB += EL3314.template
+DB += EL4008.template
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
