@@ -7,6 +7,7 @@
 epicsEnvSet("DEVICE","EK9K1")
 epicsEnvSet("NUMTERM",9)
 epicsEnvSet("Sys", "XF:31ID1-ES")
+epicsEnvSet("Dev", "GPIO:1")
 epicsEnvSet("TOP","/nsls2/users/hxu/iocs/elio-ioc")
 
 ## Register all support components
@@ -16,6 +17,9 @@ elio_registerRecordDeviceDriver(pdbbase)
 ek9000Configure("$(DEVICE)", "10.69.58.101", 502, "$(NUMTERM)")
 
 cd "${TOP}/db/"
+
+dbLoadRecords("ek9000_status.db","P=$(Sys){$(Dev)},EK9K=$(DEVICE)")
+
 
 #Configure terminal 1: EL3068
 epicsEnvSet("POS",1)

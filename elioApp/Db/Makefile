@@ -22,6 +22,8 @@ DB += EL3068.substitutions
 DB += EL3314.substitutions
 DB += EL4008.substitutions
 
+DB += ek9000_status.db
+
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
 # <anyname>_template = <templatename>

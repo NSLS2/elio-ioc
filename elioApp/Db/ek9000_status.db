@@ -1,0 +1,162 @@
+#
+# Various status PVs for the EK9k
+#
+
+record(longin,"$(P):AnalogOutputSize")
+{
+	field(PINI,"YES")
+	field(EGU, "bytes")
+	field(INP, "@device=$(EK9K),type=analogOutputs")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):AnalogInputSize")
+{
+	field(PINI,"YES")
+	field(EGU, "bytes")
+	field(INP, "@device=$(EK9K),type=analogInputs")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):DigitalInputSize")
+{
+	field(PINI,"YES")
+	field(EGU, "bits")
+	field(INP, "@device=$(EK9K),type=digitalInputs")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):DigitalOutputSize")
+{
+	field(PINI,"YES")
+	field(EGU, "bits")
+	field(INP, "@device=$(EK9K),type=digitalOutputs")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):WatchdogExpTime")
+{
+	field(SCAN, "I/O Intr")
+	field(EGU, "ms")
+	field(INP, "@device=$(EK9K),type=wdtTime")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):FallbacksTriggered")
+{
+	field(SCAN, "I/O Intr")
+	field(INP, "@device=$(EK9K),type=fallbacks")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):TCPConnections")
+{
+	field(SCAN, "I/O Intr")
+	field(INP, "@device=$(EK9K),type=tcpConnections")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):HardwareVersion")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=hardwareVer")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):SoftwareVersionMain")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=softVerMain")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):SoftwareVersionSub")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=softVerSub")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):SoftwareVersionBeta")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=softVerBeta")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):SerialNumber")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=serialNum")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):DayOfMfg")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=prodDay")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):MonthOfMfg")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=prodMonth")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):YearOfMfg")
+{
+	field(PINI,"YES")
+	field(INP,"@device=$(EK9K),type=prodYear")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longin,"$(P):EbusStatus")
+{
+	field(INP,"@device=$(EK9K),type=ebusStatus")
+	field(SCAN,"I/O Intr")
+	field(LOLO, 0)
+	field(LOW, 0)
+	field(LSV, "MAJOR")
+	field(LLSV, "MAJOR")
+	field(DTYP, "EK9000ConfigRO")
+}
+
+record(longout,"$(P):WatchdogTime")
+{
+	field(OUT,"@device=$(EK9K),type=wdtTime")
+	field(DTYP, "EK9000ConfigRW")
+	field(VAL, 1000)
+	field(PINI, "YES")
+}
+
+record(longout,"$(P):WatchdogType")
+{
+	field(OUT,"@device=$(EK9K),type=wdtType")
+	field(DTYP, "EK9000ConfigRW")
+	field(VAL, 1)
+	field(PINI, "YES")
+}
+
+record(longout,"$(P):FallbackMode")
+{
+	field(OUT,"@device=$(EK9K),type=wdtFallback")
+	field(DTYP, "EK9000ConfigRW")
+	field(VAL, 0)
+	field(PINI, "YES")
+}
+
+record(longout,"$(P):WriteLock")
+{
+	field(OUT,"@device=$(EK9K),type=writelock")
+	field(DTYP, "EK9000ConfigRW")
+	field(VAL, 1)
+	field(PINI, "YES")
+}
+
+record(longout,"$(P):EBusControl")
+{
+	field(OUT,"@device=$(EK9K),type=ebusMode")
+	field(DTYP, "EK9000ConfigRW")
+}
