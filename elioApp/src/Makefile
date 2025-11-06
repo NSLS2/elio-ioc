@@ -25,7 +25,7 @@ elio_DBD += reccaster.dbd
 elio_DBD += devEK9000.dbd ek9000.dbd ek9000Include.dbd
 
 # Add all the support libraries needed by this IOC
-elio_LIBS += asyn modbus autosave devIocStats reccaster ek9000Support
+elio_LIBS += asyn busy modbus autosave devIocStats reccaster ek9000Support
 
 # elio_registerRecordDeviceDriver.cpp derives from elio.dbd
 elio_SRCS += elio_registerRecordDeviceDriver.cpp

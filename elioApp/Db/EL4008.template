@@ -1,0 +1,16 @@
+record(ao,"$(Sys)$(Dev)AO:Ch$(CHAN)-SP")
+{
+	field(DTYP, "EL40XX")
+	field(DESC, "$(DESC=Analog Output Ch$(CHAN))")
+	field(EGU, "$(EGU=V)")
+	field(PREC, "$(PREC=3)")
+	field(ESLO, "$(ESLO=0.0003051850947599719)")
+	field(EOFF, "$(EOFF=0)")
+	field(EGUF, "$(EGUF=10)")
+	field(EGUL, "$(EGUL=0)")
+	field(LINR, "$(LINR=SLOPE)")
+	field(ADEL, "$(ADEL=0)")
+	field(MDEL, "$(MDEL=0)")
+	field(OUT, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL4008")
+	info(autosaveFields_pass0, "DESC VAL")
+}
