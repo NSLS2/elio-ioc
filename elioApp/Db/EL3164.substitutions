@@ -1,0 +1,9 @@
+file EL3164.template { pattern
+{ CHAN	}
+{ 1	}
+{ 2	}
+{ 3	}
+{ 4	}
+}
+
+
