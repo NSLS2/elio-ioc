@@ -5,5 +5,5 @@ record(bo,"$(Sys)$(Dev)Rly:Ch$(CHAN)-Cmd")
 	field(ZNAM, "$(ZNAM=low)")
 	field(ONAM, "$(ONAM=high)")
 	field(OUT, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL2798")
-	field(autosaveFields_pass0, "DESC VAL")
+	info(autosaveFields_pass0, "DESC VAL")
 }

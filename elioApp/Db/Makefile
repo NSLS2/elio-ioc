@@ -6,6 +6,7 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
+#DB += EL1002.template EL1002.substitutions
 DB += EL1124.template EL1124.substitutions
 DB += EL1808.template EL1808.substitutions
 DB += EL2124.template EL2124.substitutions
@@ -17,6 +18,7 @@ DB += EL3164.template EL3164.substitutions
 DB += EL3314.template EL3314.substitutions
 DB += EL4008.template EL4008.substitutions
 DB += EL4038.template EL4038.substitutions
+DB += EL9505.template EL9505.substitutions
 
 DB += ek9000_status.db
 

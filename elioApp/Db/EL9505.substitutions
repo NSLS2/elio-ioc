@@ -1,0 +1,7 @@
+file EL9505.template { pattern
+{ CHAN	, DESC		}
+{ 1	, "Power OK"	}
+{ 2	, "Overload"	}
+}
+
+

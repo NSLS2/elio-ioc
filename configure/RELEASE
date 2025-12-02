@@ -22,7 +22,7 @@
 # the CONFIG_SITE file.
 
 # Variables and paths to dependent modules:
-EK9000=/nsls2/users/hxu/iocs/ek9000_2
+EK9000=/nsls2/users/hxu/iocs/ek9000
 #MYMODULE = $(MODULES)/my-module
 
 # If using the sequencer, point SNCSEQ at its top directory:

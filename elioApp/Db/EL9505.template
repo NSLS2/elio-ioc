@@ -1,0 +1,9 @@
+record(bi,"$(Sys)$(Dev)DI:Ch$(CHAN)-Sts")
+{
+	field(DTYP, "EL10XX")
+	field(DESC, "$(DESC=Digital Input Ch$(CHAN))")
+	field(ZNAM, "$(ZNAM=low)")
+	field(ONAM, "$(ONAM=high)")
+	field(SCAN, "I/O Intr")
+	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL9505")
+}
