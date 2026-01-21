@@ -16,7 +16,7 @@ record(ai,"$(Sys)$(Dev)AI:Ch$(CHAN)-I")
 	info(autosaveFields_pass0, "DESC")
 }
 
-record(ai,"$(Sys)$(Dev)AI:Ch$(CHAN)Avg-I")
+record(compress,"$(Sys)$(Dev)AI:Ch$(CHAN)Avg-I")
 {
 	field(INP, "$(Sys)$(Dev)AI:Ch$(CHAN)-I")
 	field(SCAN, "1 second")
