@@ -22,5 +22,5 @@ record(compress,"$(Sys)$(Dev)AI:Ch$(CHAN)Avg-I")
 	field(SCAN, "1 second")
 	field(PREC, "$(PREC=3)")
 	field(NSAM, "$(NSAM=10)")
-	field(ALG, "AVG")
+	field(ALG, "Average")
 }
