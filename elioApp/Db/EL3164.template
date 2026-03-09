@@ -15,12 +15,3 @@ record(ai,"$(Sys)$(Dev)AI:Ch$(CHAN)-I")
 	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL3164")
 	info(autosaveFields_pass0, "DESC")
 }
-
-record(compress,"$(Sys)$(Dev)AI:Ch$(CHAN)Avg-I")
-{
-	field(INP, "$(Sys)$(Dev)AI:Ch$(CHAN)-I")
-	field(SCAN, "1 second")
-	field(PREC, "$(PREC=3)")
-	field(NSAM, "$(NSAM=10)")
-	field(ALG, "Average")
-}
