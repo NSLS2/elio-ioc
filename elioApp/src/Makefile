@@ -18,7 +18,7 @@ elio_DBD += base.dbd
 # Include dbd files from all support applications:
 elio_DBD += asyn.dbd
 elio_DBD += busySupport.dbd
-elio_DBD += modbus.dbd
+elio_DBD += modbusSupport.dbd
 elio_DBD += asSupport.dbd
 elio_DBD += devIocStats.dbd
 elio_DBD += reccaster.dbd
