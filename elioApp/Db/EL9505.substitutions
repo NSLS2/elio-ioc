@@ -3,5 +3,3 @@ file EL9505.template { pattern
 { 1	, "Power OK"	}
 { 2	, "Overload"	}
 }
-
-
