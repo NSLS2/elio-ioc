@@ -14,10 +14,13 @@ DB += EL2798.template EL2798.substitutions
 DB += EL2808.template EL2808.substitutions
 DB += EL3008.template EL3008.substitutions
 DB += EL3068.template EL3068.substitutions
+DB += EL3154.template EL3154.substitutions
 DB += EL3164.template EL3164.substitutions
 DB += EL3314.template EL3314.substitutions
 DB += EL4008.template EL4008.substitutions
 DB += EL4038.template EL4038.substitutions
+DB += EL4104.template EL4104.substitutions
+DB += EL4134.template EL4134.substitutions
 DB += EL9505.template EL9505.substitutions
 
 DB += ek9000_status.db

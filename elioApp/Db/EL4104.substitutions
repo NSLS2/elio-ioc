@@ -1,0 +1,7 @@
+file EL4104.template { pattern
+{ CHAN	}
+{ 1	}
+{ 2	}
+{ 3	}
+{ 4	}
+}

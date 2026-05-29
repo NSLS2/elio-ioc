@@ -1,0 +1,16 @@
+record(ai,"$(Sys)$(Dev)AI:Ch$(CHAN)-I")
+{
+	field(DTYP, "EL30XX")
+	field(DESC, "$(DESC=Analog Input Ch$(CHAN))")
+	field(EGU, "$(EGU=mA)")
+	field(SCAN, "I/O Intr")
+	field(PREC, "$(PREC=3)")
+	field(ESLO, "$(ESLO=0.0004882961516159551)")
+	field(EOFF, "$(EOFF=4)")
+	field(EGUF, "$(EGUF=20)")
+	field(EGUL, "$(EGUL=4)")
+	field(LINR, "$(LINR=SLOPE)")
+	field(ADEL, "$(ADEL=0)")
+	field(MDEL, "$(MDEL=0)")
+	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL3154")
+}
