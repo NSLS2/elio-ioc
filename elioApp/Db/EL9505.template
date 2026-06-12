@@ -6,4 +6,5 @@ record(bi,"$(Sys)$(Dev)DI:Ch$(CHAN)-Sts")
 	field(ONAM, "$(ONAM=high)")
 	field(SCAN, "I/O Intr")
 	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL9505")
+	info(autosaveFields_pass0, "DESC")
 }

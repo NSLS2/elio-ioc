@@ -13,4 +13,5 @@ record(ai,"$(Sys)$(Dev)AI:Ch$(CHAN)-I")
 	field(ADEL, "$(ADEL=0)")
 	field(MDEL, "$(MDEL=0)")
 	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL3154")
+	info(autosaveFields_pass0, "DESC")
 }
