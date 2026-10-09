@@ -17,6 +17,7 @@ DB += EL3068.template EL3068.substitutions
 DB += EL3154.template EL3154.substitutions
 DB += EL3164.template EL3164.substitutions
 DB += EL3314.template EL3314.substitutions
+DB += EL3318.template EL3318.substitutions
 DB += EL4008.template EL4008.substitutions
 DB += EL4038.template EL4038.substitutions
 DB += EL4104.template EL4104.substitutions
