@@ -1,4 +1,4 @@
-file EL331x.template { pattern
+file EL3318.template { pattern
 { CHAN	}
 { 1	}
 { 2	}
