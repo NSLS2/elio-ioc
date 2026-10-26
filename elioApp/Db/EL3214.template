@@ -1,0 +1,15 @@
+record(ai,"$(Sys)$(Dev)T:Ch$(CHAN)-I")
+{
+	field(DTYP, "EL30XX")
+	field(DESC, "$(DESC=RTD Ch$(CHAN))")
+	field(EGU, "$(EGU=C)")
+	field(SCAN, "I/O Intr")
+	field(PREC, "$(PREC=3)")
+	field(ESLO, "$(ESLO=0.1)")
+	field(EOFF, "$(EOFF=0)")
+	field(ASLO, "$(ASLO=1)")
+	field(AOFF, "$(AOFF=0)")
+	field(LINR, "$(LINR=SLOPE)")
+	field(INP, "@device=$(DEVICE),pos=$(POS),channel=$(CHAN),type=EL3214")
+	info(autosaveFields_pass0, "DESC ASLO AOFF PREC EGU")
+}
